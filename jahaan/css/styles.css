@@ -1,0 +1,283 @@
+/* Reset some default styles for the navbar */
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Style the header and navbar */
+header {
+    background-color: #ffffff;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Center the logo in the navbar */
+.logo {
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+}
+.logo a {
+    text-decoration: none;
+}
+.logo h3 {
+    text-decoration: none;
+    margin-top: 27px;
+    margin-left: 510px;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+/* Style the navigation links */
+.nav-links {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: smaller;
+    color: white;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Style the links on hover */
+.nav-links a:hover {
+    color: #c79e72;
+    text-decoration: underline;
+}
+
+.photo-gallery {
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    flex-wrap: wrap;
+    
+    /* max-width: 1200px; */
+    margin: 20px 70px;
+}
+
+/* Style individual photo cards */
+.photo-card {
+    width: 300px;
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+    margin: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style the images within the photo cards */
+.photo-card img {
+    max-width: 100%;
+    height: 300px;
+}
+
+/* Style the photo descriptions */
+.photo-description {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.button {
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffffff; /* Change the button color as needed */
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button:hover::before {
+    content: "buy for  ";
+}
+.button:hover{
+    background-color: #c79e7296;
+}
+.contact {
+    margin-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contact a {
+    text-decoration: underline ;
+    color: #000000;
+}
+.contact a:hover {
+    color: #c79e7296;
+}
+.container{
+    max-width: 800px;
+    background: #fff;
+    /* border: 1px solid #ccc; */
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+  }
+.container.form{
+    padding: 10px;
+  }
+  .container form .form-row{
+    display: flex;
+    margin: 20px 0;
+  }
+  form .form-row .input-data{
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    /* padding: 0 20px; */
+    position: relative;
+  }
+  form .form-row .textarea{
+    height: 70px;
+  }
+  .input-data input,
+  .textarea textarea{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12.5px;
+    font-weight: 700;
+    background-color: #f0f0f0;
+    padding-left: 10px;
+     display: inline-flex;  /* kya chalra?????? */
+    width: 100%;
+    height: 100%;
+    /* border: none; */
+    font-size: 17px;
+    border: 1px solid rgb(218, 218, 218);
+  }
+  .input-data input:focus ~ label, .textarea textarea:focus ~ label,
+  .input-data input:valid ~ label, .textarea textarea:valid ~ label{
+    /* transform: translateY(-10px); */
+    transform: translate3d(10px, -15px, 0);
+    font-size: 10px;
+    color: #000000;
+  }
+  .textarea textarea{
+    resize: none;
+    padding-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .input-data label{
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  .textarea label{
+    width: 100%;
+    bottom: 40px;
+    /* background: #fff; */
+  }
+  /* .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+  } */
+  /* .input-data .underline:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  } */
+  .input-data input:focus ~ .underline:before,
+  .input-data input:valid ~ .underline:before,
+  .textarea textarea:focus ~ .underline:before,
+  .textarea textarea:valid ~ .underline:before{
+    transform: scale(1);
+  }
+  .submit-btn .input-data{
+    overflow: hidden;
+    height: 30px!important;
+    width: 15%!important;
+  }
+  .submit-btn .input-data .inner{
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    /* left: -150%; */
+    padding: 12px;
+    background: #242424;
+    transition: all 0.15s;
+  }
+  .submit-btn .input-data:hover .inner{
+    background: #897f7b;
+  }
+  .submit-btn .input-data input{
+    background: none;
+
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    color: #ffffff;
+    font-size: 12.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    position:absolute;
+    z-index: 2;
+   }/*
+  @media (max-width: 700px) {
+    .container .text{
+      font-size: 30px;
+    }
+    .container form{
+      padding: 10px 0 0 0;
+    }
+    .container form .form-row{
+      display: block;
+    }
+    form .form-row .input-data{
+      margin: 35px 0!important;
+    }
+    /* .submit-btn .input-data{
+      width: 40%!important;
+    } 
+  } */
+
+.aboutusbody{
+  margin: 50px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.socials-link{
+  margin-top:0px;
+  display: flex;
+  justify-content: center;
+}
+
+.lni{
+  margin:0px 10px;
+}
